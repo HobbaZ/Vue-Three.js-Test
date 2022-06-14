@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import Auth from '/utils/auth';
 
 //User input data
 export default {
