@@ -51,7 +51,7 @@ module.exports = {
       return res.status(400).json({ message: "Can't find this user" });
     }
 
-    const correctPw = user.checkPassword(body.password);
+    const correctPw = user.isCorrectPassword(body.password);
 
     if (!correctPw) {
       return res.status(400).json({ message: 'Wrong password or email entered!' });
